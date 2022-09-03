@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap);
+html,
+body {
+    height: 100%;
+    font-family: "Montserrat", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+.form-login {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+@media(min-width:800px) {
+    .form-login {
+        max-width: 450px;
+    }
+}
+
+.form-login .checkbox {
+    font-weight: 400;
+}
+
+.form-login .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-login input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-login input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin {
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}

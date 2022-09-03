@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+body,
+button {
+    font-family: "Poppins";
+}
+
+:root {
+    --offcanvas-width: 270px;
+    --topNavbarHeight: 56px;
+}
+
+.sidebar-nav {
+    width: var(--offcanvas-width);
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-link .right-icon {
+    display: inline-flex;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 992px) {
+    body {
+        overflow: auto !important;
+    }
+    main {
+        margin-left: var(--offcanvas-width);
+    }
+    /* this is to remove the backdrop */
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+    .sidebar-nav {
+        -webkit-transform: none;
+        transform: none;
+        visibility: visible !important;
+        height: calc(100% - var(--topNavbarHeight));
+        top: var(--topNavbarHeight);
+    }
+}
+
+@media (max-width: 700px) {
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    .imag {
+        width: 75%;
+    }
+}
+
+@media (min-width: 701px) {
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    .imag {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+    .imag {
+        width: 90%;
+    }
+}
+
+
+/* Home part */
+
+
+/* .redressed {
+    font-family: 'Redressed', cursive;
+} */
+
+
+/* .merriweather {
+    font-family: 'Merriweather', serif;
+} */
+
+.cc-navbar {
+    background-color: rgba(0, 0, 0, 0.55);
+    /* font-family: 'Merriweather', serif; */
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    z-index: 99;
+}
+
+.cc-navbar .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+}
+
+.cc-navbar .nav-link:hover {
+    padding-bottom: 20px;
+    border-bottom-color: var(--bs-teal);
+}
+
+.banner,
+.order-form {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banniere.jpeg') center center fixed no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.order-form {
+    height: 500px;
+}
+
+.banner .banner-desc h1 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.cc-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banniere.jpeg') center center fixed no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+
+.btn-order {
+    color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+    color: #fff;
+    background-color: var(--bs-teal);
+}
+
+
+/* Home part */
