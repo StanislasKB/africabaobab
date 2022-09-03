@@ -18,7 +18,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
    
   phpmyadmin:
-    image: phpmyadmin:latest
+    image: bayord/phpmyadmin:latest
     restart: always
     ports:
       - 9001:80
